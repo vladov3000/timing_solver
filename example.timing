@@ -1,0 +1,17 @@
+GATES
+arity 1 ~  d 5
+        ~| d 10
+				^  d 30
+
+CLOCK
+setup = 5
+c2q   = 30
+
+CIRCUIT
+x is [],
+y is [],
+z is [],
+a is (^ y z),
+b is [~| (~| (~ x) z) a],
+c is [a],
+b
